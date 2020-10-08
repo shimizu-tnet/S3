@@ -3,11 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - cd ./React/public
+      - cd ./public
       - npm install
       - npm run build
 artifacts:
-  base-directory: ./React/build
+  base-directory: ./build
   files:
       - ./**/*
 
