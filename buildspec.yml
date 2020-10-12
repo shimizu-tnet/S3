@@ -6,7 +6,7 @@ phases:
       - cd ./public
       - npm install
       - npm run build
-      - aws s3 rm s3://pdftest-20200803 --recursive
+      - aws s3 rm s3://tnet-test-index --recursive
 artifacts:
   base-directory: ./build
   files:
