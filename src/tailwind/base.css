@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @apply text-black;
+  font-size: 1.6em;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr min(1000px, 100%) 1fr;
+}
+
+#root > * {
+  grid-column: 2;
+}
