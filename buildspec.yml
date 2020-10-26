@@ -3,7 +3,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - cd ./public
       - npm install
       - npm run build
       - aws s3 rm s3://tnet-test-index --recursive
